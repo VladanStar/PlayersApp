@@ -1,0 +1,27 @@
+
+<form #f="ngForm" (ngSubmit)="updatePlayer(f)">
+
+  <div class="mb-3">
+<label for="ime">Ime</label>
+<input  title="#f" [(ngModel)]="player.ime" type="text" id="ime" name="ime" class="form-control" >
+  </div>
+  <div class="mb-3">
+      <label for="pozicija">Pozicija</label>
+      <input  [(ngModel)]="player.pozicija" type="text" name="pozicija" id="pozicija" class="form-control" >
+  </div>
+  <div class="mb-3">
+      <label for="tim">tim</label>
+      <input  [(ngModel)]="player.tim" type="text" id="tim" name="tim" class="form-control">
+  </div>
+  <div class="mb-3">
+      <label for="broj_dresa">Broj Dresa</label>
+      <input   [(ngModel)]="player.broj_dresa" type="text" name="broj_dresa"  id="broj_dresa" class="form-control">
+  </div>
+  <div class="mb-3">
+      <label for="zemlja">Zemlja</label>
+      <input [(ngModel)]="player.zemlja" type="text" id="zemlja"  name="zemlja" class="form-control" >
+  </div>
+
+ <button class="btn btn-success" type="submit">Edit player</button>
+</form>
+

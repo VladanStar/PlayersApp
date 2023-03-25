@@ -12,6 +12,9 @@ import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { EditPlayerComponent } from './components/edit-player/edit-player.component';
+import { AddPlayerComponent } from './components/add-player/add-player.component';
+
 
 
 
@@ -21,7 +24,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     PlayerComponent,
     PlayerDetailsComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    EditPlayerComponent,
+    AddPlayerComponent
   ],
   imports: [
     BrowserModule,
