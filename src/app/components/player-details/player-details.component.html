@@ -1,1 +1,36 @@
-<p>player-details works!</p>
+<div class="row">
+  <div class="col-4">
+  <div class="card" *ngIf="player">
+
+      <a routerLink="/f" class="btn btn-sm btn-secondary mb-3 back"  >Back</a>
+      <h3 class="card-header">{{player.ime}}</h3>
+
+      <div class="card-body">
+          <ul class="list-group">
+              <li class="list-group-item">Ime: {{player.ime}}</li>
+              <li class="list-group-item">Tim: {{player.tim}}</li>
+              <li class="list-group-item">Broj Dresaa: {{player.broj_dresa}}</li>
+              <li class="list-group-item">Pozicijae: {{player.pozicija}}</li>
+              <li class="list-group-item">Zemlja: {{player.zemlja}}</li>
+             <!-- <li><img src="{{player.img}}" alt="Slika fudbalera"></li> -->
+              <!-- <li>{{player.id}}</li> -->
+          </ul>
+      </div>
+      <div class="card-footer">
+          <div class="btn-group">
+              <a routerLink="/player/edit/{{player.id}}" class="btn btn-info">Edit</a>
+              <button class="btn btn-danger" (click)="deletePlayer()">Delete</button>
+
+          </div>
+      </div>
+  </div>
+
+  </div>
+  <div class="col-8">
+      <div>
+          <img src="{{player.img}}" alt="">
+      </div>
+
+  </div>
+  </div>
+

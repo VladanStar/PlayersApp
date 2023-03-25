@@ -11,7 +11,7 @@ export class PlayerService {
 
   getAll(): Observable<Player[]> {
     return this.db
-      .list<Player>('/Players')
+      .list<Player>('/players')
       .snapshotChanges()
       .pipe(
         map((x) =>

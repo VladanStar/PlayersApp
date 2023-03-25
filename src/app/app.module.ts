@@ -10,6 +10,9 @@ import { PlayerComponent } from './components/player/player.component';
 import { PlayerDetailsComponent } from './components/player-details/player-details.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
 FormsModule,
+Ng2SearchPipeModule,
+NgxPaginationModule,
+
 AngularFireModule.initializeApp(environment.firebase)
 
   ],
