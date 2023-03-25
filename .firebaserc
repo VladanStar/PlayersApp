@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "projectitc": {
+      "hosting": {
+        "projectITC": [
+          "projectitc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "projectitc"
+  }
+}
