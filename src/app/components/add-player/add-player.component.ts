@@ -10,6 +10,8 @@ import { PlayerService } from 'src/app/services/player.service';
   styleUrls: ['./add-player.component.css']
 })
 export class AddPlayerComponent implements OnInit {
+
+player: any;
   constructor(private playerService: PlayerService, private router: Router){}
 
 ngOnInit(): void {
@@ -25,3 +27,7 @@ addPlayer(f: NgForm) {
   this.router.navigate(['/']);
 }
 }
+
+
+
+

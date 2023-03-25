@@ -1,0 +1,87 @@
+<form #f="ngForm" (ngSubmit)="addPlayer(f)">
+  <div class="mb-3">
+    <label for="ime">Ime</label>
+    <input
+    title="#"
+    ngModel
+    type="text"
+    id="ime"
+    #ime="ngModel"
+    name="ime"
+    class="form-control"
+    required
+    [ngClass]="{ 'is-invalid': ime.invalid && ime.touched }"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="pozicija">Pozicija</label>
+    <input
+    title="#"
+    ngModel
+    type="text"
+    id="pozicija"
+    #pozicija="ngModel"
+    name="pozicija"
+    class="form-control"
+    required
+    [ngClass]="{ 'is-invalid': pozicija.invalid && pozicija.touched }"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="tim">tim</label>
+    <input
+    title="#"
+    ngModel
+    type="text"
+    id="tim"
+    #tim="ngModel"
+    name="tim"
+    class="form-control"
+    required
+    [ngClass]="{ 'is-invalid': tim.invalid && tim.touched }"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="slika">Slika Igraca</label>
+    <input
+      title="$"
+      ngModel
+      type="string"
+      id="slika"
+      name="img"
+      #img="ngModel"
+      class="form-control"
+      placeholder="unesite copy image address"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="broj_dresa">Broj Dresa</label>
+    <input
+    title="#"
+    ngModel
+    type="text"
+    id="broj_dresa"
+    #broj_dresa="ngModel"
+    name="broj_dresa"
+    class="form-control"
+    required
+    [ngClass]="{ 'is-invalid': broj_dresa.invalid && broj_dresa.touched }"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="zemlja">Zemlja</label>
+    <input
+    title="#"
+    ngModel
+    type="text"
+    id="zemlja"
+    #zemlja="ngModel"
+    name="zemlja"
+    class="form-control"
+    required
+    [ngClass]="{ 'is-invalid': zemlja.invalid && zemlja.touched }"
+    />
+  </div>
+
+  <button class="btn btn-success" type="submit">Edit player</button>
+</form>
