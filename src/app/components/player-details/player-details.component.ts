@@ -26,6 +26,13 @@ ngOnInit(): void {
 }
 
 deletePlayer(){
+  let id = this.id as string;
+  if(confirm("Da li ste sigurni?")){
+    if(id){
+  this.playerServis.delete(this.id);
+  this.router.navigate([""])
 
+  }
+}
 }
 }

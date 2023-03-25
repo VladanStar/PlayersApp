@@ -5,7 +5,7 @@ import { PlayerDetailsComponent } from './components/player-details/player-detai
 
 const routes: Routes = [
 {path:"", component:PlayerComponent},
-{path:"player:id", component:PlayerDetailsComponent}
+{path:"player/:id", component:PlayerDetailsComponent}
 
 
 ];
