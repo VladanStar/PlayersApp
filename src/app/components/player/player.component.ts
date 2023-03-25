@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from 'src/app/models/player';
 import { PlayerService } from 'src/app/services/player.service';
+import * as Papa from 'papaparse';
 
 @Component({
   selector: 'app-player',
@@ -54,16 +55,16 @@ sortBroj() {
     }
   });
 }
-// exportToCsv() {
-//   const csv = Papa.unparse(this.players);
-//   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-//   const link = document.createElement('a');
-//   const url = URL.createObjectURL(blob);
-//   link.setAttribute('href', url);
-//   link.setAttribute('download', 'Players.csv');
-//   link.style.visibility = 'hidden';
-//   document.body.appendChild(link);
-//   link.click();
-//   document.body.removeChild(link);
-// }
+exportToCsv() {
+  const csv = Papa.unparse(this.players);
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+  link.setAttribute('href', url);
+  link.setAttribute('download', 'players.csv');
+  link.style.visibility = 'hidden';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 }
