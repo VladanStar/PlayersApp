@@ -5,7 +5,7 @@ import { Player } from 'src/app/models/player';
 import { PlayerService } from 'src/app/services/player.service';
 @Component({
   selector: 'app-edit-player',
-  templateUrl: './edit-player-component.html',
+  templateUrl: './edit-player.component.html',
   styleUrls: ['./edit-player.component.css']
 })
 export class EditPlayerComponent  implements OnInit{
