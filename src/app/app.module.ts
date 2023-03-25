@@ -14,6 +14,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { EditPlayerComponent } from './components/edit-player/edit-player.component';
 import { AddPlayerComponent } from './components/add-player/add-player.component';
+import { LoginComponent } from './components/login/login.component';
+
+import { RegisterComponent } from './components/register/register.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 
 
@@ -26,7 +30,11 @@ import { AddPlayerComponent } from './components/add-player/add-player.component
     NavComponent,
     FooterComponent,
     EditPlayerComponent,
-    AddPlayerComponent
+    AddPlayerComponent,
+    LoginComponent,
+
+    RegisterComponent,
+      VerifyEmailComponent
   ],
   imports: [
     BrowserModule,
